@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRTP.Plugins", "SRTP.Plugins.csproj", "{DB103365-0AC3-DEDE-D525-E18ED0302CBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRTP", "SRTP.csproj", "{D08E582C-D987-BB2A-9C68-F3C55EB93810}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRTP.Editor", "SRTP.Editor.csproj", "{DA282AA7-9BB0-CF09-2702-3AA6DDBCE9B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB103365-0AC3-DEDE-D525-E18ED0302CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB103365-0AC3-DEDE-D525-E18ED0302CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB103365-0AC3-DEDE-D525-E18ED0302CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB103365-0AC3-DEDE-D525-E18ED0302CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D08E582C-D987-BB2A-9C68-F3C55EB93810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D08E582C-D987-BB2A-9C68-F3C55EB93810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D08E582C-D987-BB2A-9C68-F3C55EB93810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D08E582C-D987-BB2A-9C68-F3C55EB93810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA282AA7-9BB0-CF09-2702-3AA6DDBCE9B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA282AA7-9BB0-CF09-2702-3AA6DDBCE9B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA282AA7-9BB0-CF09-2702-3AA6DDBCE9B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA282AA7-9BB0-CF09-2702-3AA6DDBCE9B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
