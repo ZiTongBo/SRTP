@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class gameState : MonoBehaviour {
     public static int State = 0;
-    public const int MOVE = 1;
-    public const int ROTATE = 2;
-    public const int CHANGE = 3;
-    public const int DELETE = 4;
+    public const int MOVE = 2;
+    public const int ROTATE = 3;
+    public const int CHANGE = 4;
+    public const int DELETE = 5;
     public const int MENU = 6;
     public const int SAVE = 7;
     public const int ADD = 8;
@@ -19,6 +19,7 @@ public class gameState : MonoBehaviour {
     public GameObject chair2;
     public GameObject table1;
     public GameObject table2;
+    public GameObject speaker1;
     GameObject FPS;
     int sHeight;
     int sWidth;
@@ -28,9 +29,13 @@ public class gameState : MonoBehaviour {
     public Texture2D bg2;
     public Texture2D t1;
     public Texture2D t2;
+    public Texture2D t3;
+    public Texture2D t4;
     public Texture2D c1;
     public Texture2D c2;
-
+    public Texture2D c3;
+    public Texture2D c4;
+    public Texture2D s1;
     // Use this for initialization
     void Start()
     {
@@ -83,43 +88,43 @@ public class gameState : MonoBehaviour {
         switch (State)
         {
             case 0:
-                GUI.TextField(new Rect(sWidth / 2 - 10, 10, 90, 30), "室内装修设计");
+                GUI.Label(new Rect(sWidth / 2 - 10, 10, 90, 30), "室内装修设计");
                 break;
             case MOVE:
-                GUI.TextField(new Rect(sWidth / 2 - 10, 10, 100, 30), "选择移动的位置");
+                GUI.Label(new Rect(sWidth / 2 - 10, 10, 100, 30), "选择移动的位置");
                 break;
             case ROTATE:
-                GUI.TextField(new Rect(sWidth / 2 - 10, 10, 100, 30), "选择旋转的方位");
+                GUI.Label(new Rect(sWidth / 2 - 10, 10, 100, 30), "选择旋转的方位");
                 break;
             case CHANGE:
-                GUI.TextField(new Rect(sWidth / 2 - 10, 10, 120, 30), "左键确定，右键更换");
+                GUI.Label(new Rect(sWidth / 2 - 10, 10, 120, 30), "左键确定，右键更换");
                 break;
             case DELETE:
-                GUI.TextField(new Rect(sWidth / 2 - 10, 10, 120, 30), "左键删除，右键取消");
+                GUI.Label(new Rect(sWidth / 2 - 10, 10, 120, 30), "左键删除，右键取消");
                 break;
             case MENU:
                 FPS.GetComponent<UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController>().enabled = false;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-                GUI.Window(0, new Rect(sWidth / 2 - 250, 100, 500, 500), menu, "");
+                GUI.Window(0, new Rect(sWidth / 2 - 350, 200, 700, 700), menu, "");
                 break;
             case SAVE:
-                GUI.TextField(new Rect(sWidth / 2 - 10, 10, 110, 30), "保存成功");
+                GUI.Label(new Rect(sWidth / 2 - 10, 10, 80, 30), "保存成功");
                 break;
             case ADD:
                 FPS.GetComponent<UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController>().enabled = false;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-                GUI.Window(0, new Rect(sWidth / 2 - 250, 100, 500, 500), add, "请选择要添加的家具");
+                GUI.Window(0, new Rect(sWidth / 2 - 350, 200, 700, 700), add, "请选择要添加的家具");
                 break;
             case ADD_CHAIR:
-                GUI.Window(0, new Rect(sWidth / 2 - 250, 100, 500, 500), add, "");
+                GUI.Window(0, new Rect(sWidth / 2 - 350, 200, 700, 700), add, "");
                 break;
             case ADD_TABLE:
-                GUI.Window(0, new Rect(sWidth / 2 - 250, 100, 500, 500), add, "");
+                GUI.Window(0, new Rect(sWidth / 2 - 350, 200, 700, 700), add, "");
                 break;
             case ADD_SPEAKER:
-                GUI.Window(0, new Rect(sWidth / 2 - 250, 100, 500, 500), add, "");
+                GUI.Window(0, new Rect(sWidth / 2 - 350, 200, 700, 700), add, "");
                 break;
             default:
                 break;
@@ -128,21 +133,25 @@ public class gameState : MonoBehaviour {
 
     void add(int WindowID)
     {
-        GUI.Box(new Rect(0, 0, 500, 500), bg2);
-        GUI.TextField(new Rect(190, 50, 120, 30), "请选择要添加的家具");
+        GUI.Box(new Rect(0, 0, 700, 700), bg2);
+        GUI.Button(new Rect(250, 50, 200, 50), "请选择要添加的家具");
         
         switch (State)
         {
             case ADD:
-                if (GUI.Button(new Rect(200, 150, 80, 50), "桌子"))
+                if (GUI.Button(new Rect(250, 150, 200, 50), "桌子"))
                 {
                     State = ADD_TABLE;
                 }
-                if (GUI.Button(new Rect(200, 250, 80, 50), "椅子"))
+                if (GUI.Button(new Rect(250, 250, 200, 50), "椅子"))
                 {
                     State = ADD_CHAIR;
                 }
-                if (GUI.Button(new Rect(200, 350, 80, 50), "返回"))
+                if (GUI.Button(new Rect(250, 350, 200, 50), "音响"))
+                {
+                    State = ADD_SPEAKER;
+                }
+                if (GUI.Button(new Rect(250, 450, 200, 50), "返回"))
                 {
                     State = 0;
                     FPS.GetComponent<UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController>().enabled = true;
@@ -150,7 +159,7 @@ public class gameState : MonoBehaviour {
                 }
                 break;
             case ADD_CHAIR:
-                if (GUI.Button(new Rect(100, 150, 100, 100), c1))
+                if (GUI.Button(new Rect(100, 150, 200, 200), c1))
                 {
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     RaycastHit hit;
@@ -167,7 +176,7 @@ public class gameState : MonoBehaviour {
                     newObject.GetComponent<BoxCollider>().center = new Vector3(0, 0, 0);
                     State = NEW;
                 }
-                if (GUI.Button(new Rect(300, 150, 100, 100), c2))
+                if (GUI.Button(new Rect(400, 150, 200, 200), c2))
                 {
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     RaycastHit hit;
@@ -185,13 +194,48 @@ public class gameState : MonoBehaviour {
                     State = NEW;
                    
                 }
-                if (GUI.Button(new Rect(200, 300, 100, 50), "返回"))
+                if (GUI.Button(new Rect(100, 400, 200, 200), c3))
+                {
+                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    RaycastHit hit;
+                    Physics.Raycast(ray, out hit);
+                    Vector3 pos = new Vector3();
+                    pos.x = hit.point.x;
+                    pos.z = hit.point.z;
+                    pos.y = 0;
+                    newObject = Instantiate(chair1, pos, new Quaternion(0, 0, 0, 0));
+                    newObject.AddComponent<MeshRenderer>();
+                    newObject.AddComponent<MeshFilter>();
+                    newObject.AddComponent<BoxCollider>();
+                    newObject.GetComponent<BoxCollider>().size = new Vector3(1, 1, 1);
+                    newObject.GetComponent<BoxCollider>().center = new Vector3(0, 0, 0);
+                    State = NEW;
+                }
+                if (GUI.Button(new Rect(400, 400, 200, 200), c4))
+                {
+                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    RaycastHit hit;
+                    Physics.Raycast(ray, out hit);
+                    Vector3 pos = new Vector3();
+                    pos.x = hit.point.x;
+                    pos.z = hit.point.z;
+                    pos.y = 0;
+                    newObject = Instantiate(chair2, pos, new Quaternion(0, 0, 0, 0));
+                    newObject.AddComponent<MeshRenderer>();
+                    newObject.AddComponent<MeshFilter>();
+                    newObject.AddComponent<BoxCollider>();
+                    
+                    newObject.GetComponent<BoxCollider>().size = new Vector3(1, 1, 1);
+                    newObject.GetComponent<BoxCollider>().center = new Vector3(0, 0, 0);
+                    State = NEW;
+                }
+                if (GUI.Button(new Rect(250, 600, 200, 50), "返回"))
                 {
                     State = ADD;
                 }
                 break;
             case ADD_TABLE:
-                if (GUI.Button(new Rect(100, 150, 100, 100), t1))
+                if (GUI.Button(new Rect(100, 150, 200,200), t1))
                 {
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     RaycastHit hit;
@@ -208,7 +252,7 @@ public class gameState : MonoBehaviour {
                     newObject.GetComponent<BoxCollider>().center = new Vector3(0, 0, 0);
                     State = NEW;
                 }
-                if (GUI.Button(new Rect(300, 150, 100, 100), t2))
+                if (GUI.Button(new Rect(400, 150, 200, 200), t2))
                 {
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     RaycastHit hit;
@@ -226,12 +270,67 @@ public class gameState : MonoBehaviour {
                     State = NEW;
 
                 }
-                if (GUI.Button(new Rect(200, 300, 100, 50), "返回"))
+                if (GUI.Button(new Rect(100, 400, 200, 200), t3))
+                {
+                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    RaycastHit hit;
+                    Physics.Raycast(ray, out hit);
+                    Vector3 pos = new Vector3();
+                    pos.x = hit.point.x;
+                    pos.z = hit.point.z;
+                    pos.y = 0;
+                    newObject = Instantiate(table1, pos, new Quaternion(0, 0, 0, 0));
+                    newObject.AddComponent<MeshRenderer>();
+                    newObject.AddComponent<MeshFilter>();
+                    newObject.AddComponent<BoxCollider>();
+                    newObject.GetComponent<BoxCollider>().size = new Vector3(1, 1, 1);
+                    newObject.GetComponent<BoxCollider>().center = new Vector3(0, 0, 0);
+                    State = NEW;
+                }
+                if (GUI.Button(new Rect(400, 400, 200, 200), t4))
+                {
+                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    RaycastHit hit;
+                    Physics.Raycast(ray, out hit);
+                    Vector3 pos = new Vector3();
+                    pos.x = hit.point.x;
+                    pos.z = hit.point.z;
+                    pos.y = 0;
+                    newObject = Instantiate(table1, pos, new Quaternion(0, 0, 0, 0));
+                    newObject.AddComponent<MeshRenderer>();
+                    newObject.AddComponent<MeshFilter>();
+                    newObject.AddComponent<BoxCollider>();
+                    newObject.GetComponent<BoxCollider>().size = new Vector3(1, 1, 1);
+                    newObject.GetComponent<BoxCollider>().center = new Vector3(0, 0, 0);
+                    State = NEW;
+                }
+                if (GUI.Button(new Rect(250, 600, 200, 50), "返回"))
                 {
                     State = ADD;
                 }
                 break;
             case ADD_SPEAKER:
+                if (GUI.Button(new Rect(100, 150, 200, 200), s1))
+                {
+                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    RaycastHit hit;
+                    Physics.Raycast(ray, out hit);
+                    Vector3 pos = new Vector3();
+                    pos.x = hit.point.x;
+                    pos.z = hit.point.z;
+                    pos.y = 0;
+                    newObject = Instantiate(speaker1, pos, new Quaternion(0, 0, 0, 0));
+                    newObject.AddComponent<MeshRenderer>();
+                    newObject.AddComponent<MeshFilter>();
+                    newObject.AddComponent<BoxCollider>();
+                    newObject.GetComponent<BoxCollider>().size = new Vector3(1, 1, 1);
+                    newObject.GetComponent<BoxCollider>().center = new Vector3(0, 0, 0);
+                    State = NEW;
+                }
+                if (GUI.Button(new Rect(250, 400, 200, 50), "返回"))
+                {
+                    State = ADD;
+                }
                 break;
             default:
                 break;
@@ -240,22 +339,26 @@ public class gameState : MonoBehaviour {
     }
     void menu(int WindowID)
     {
-        GUI.TextField(new Rect(200, 50, 100, 50), "主菜单");
-        GUI.Box(new Rect(0, 0, 500, 500), bg1);
-        if (GUI.Button(new Rect(200, 150, 100, 50), "保存设计"))
+        GUI.Box(new Rect(0, 0, 700, 700), bg1);
+        GUI.Button(new Rect(250, 30, 200, 50), "主菜单");
+        if (GUI.Button(new Rect(250, 200, 200, 50), "保存设计"))
         {
-            Application.CaptureScreenshot("Screenshot/name" + i);
+            Application.CaptureScreenshot("Screenshot/name" + i +".png");
             i++;
             State = SAVE;
             FPS.GetComponent<UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController>().enabled = true;
             Cursor.visible = false;
         }
-        if (GUI.Button(new Rect(200, 250, 100, 50), "返回户型选择"))
+        if (GUI.Button(new Rect(250, 300,200, 50), "返回户型选择"))
         {
             State = 0;
             SceneManager.LoadScene("Main");
         }
-        if (GUI.Button(new Rect(200, 350, 100, 50), "返回"))
+        if (GUI.Button(new Rect(250, 400, 200, 50), "联系作者"))
+        {
+            Application.OpenURL("http://www.bozt.top");
+        }
+        if (GUI.Button(new Rect(250, 500, 200, 50), "返回"))
         {
             State = 0;
             FPS.GetComponent<UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController>().enabled = true;

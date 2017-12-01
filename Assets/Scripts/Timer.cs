@@ -71,10 +71,11 @@ public class Timer : MonoBehaviour {
                     _select.AddComponent<Rotater>();
                     gameState.State = 3;
                 }
-                if (GUI.Button(new Rect(sWidth * 2 / 5, sHeight * 2 / 4, 80, 50), "更换"))
+                if (GUI.Button(new Rect(sWidth * 2 / 5, sHeight * 2 / 4, 80, 50), "返回"))
                 {
-                    _select.AddComponent<Changer>();
-                    gameState.State = 4;
+                    FPS.GetComponent<UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController>().enabled = true;
+                    Cursor.visible = false;
+                    gameState.State = 0;
                 }
                 if (GUI.Button(new Rect(sWidth * 2 / 4, sHeight * 3 / 5, 80, 50), "删除"))
                 {
