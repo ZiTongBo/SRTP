@@ -46,5 +46,6 @@ public class MiniMap : MonoBehaviour {
     {
         GUI.DrawTexture(new Rect(Screen.width - map.width, 0, map.width, map.height), map);
         GUI.DrawTexture(new Rect(miniMap_x + 100, miniMap_y, map_cube.width/10, map_cube.height/10), map_cube);
+        GUI.Box(new Rect(Screen.width - map.width/2 - 30, map.height, 60, 30), "小地图");
     }
 }

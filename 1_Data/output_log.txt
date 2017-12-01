@@ -18,7 +18,7 @@ Platform assembly: E:\SRTP\1_Data\Managed\UnityEngine.UI.dll (this message is ha
 Loading E:\SRTP\1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: E:\SRTP\1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading E:\SRTP\1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.031 seconds
+- Completed reload, in  0.026 seconds
 Platform assembly: E:\SRTP\1_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: E:\SRTP\1_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on Mojing
@@ -31,27 +31,19 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 4.098414 ms
+UnloadTime: 3.190711 ms
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 1cd8 -> priority: 1 
-  Thread -> id: 1dcc -> priority: 1 
-  Thread -> id: 2348 -> priority: 1 
-  Thread -> id: 24d4 -> priority: 1 
+  Thread -> id: 474 -> priority: 1 
+  Thread -> id: 1a34 -> priority: 1 
+  Thread -> id: 17c4 -> priority: 1 
+  Thread -> id: 2380 -> priority: 1 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.471709 ms
+UnloadTime: 0.786182 ms
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 679.
-Total: 0.360043 ms (FindLiveObjects: 0.057064 ms CreateObjectMapping: 0.032022 ms MarkObjects: 0.205269 ms  DeleteObjects: 0.064454 ms)
+Total: 0.332947 ms (FindLiveObjects: 0.044748 ms CreateObjectMapping: 0.033253 ms MarkObjects: 0.190490 ms  DeleteObjects: 0.064044 ms)
 
 name: chair01
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: chair
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: chair
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -59,13 +51,89 @@ name: table01
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Failed to store screen shot (E:/SRTP/1_Data/Screenshot/name1.png)
+name: table02
  
-(Filename:  Line: 133)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: table02
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: chair02
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: chair01
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: chair01
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: chair01
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: table01
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: table_low03
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: table02
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: speaker01_wood1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: speaker01_wood1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: TV01
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Can't add component 'MeshRenderer' to table01(Clone) because such a component is already added to the game object!
+ 
+(Filename:  Line: 97)
+
+Can't add component 'MeshFilter' to table01(Clone) because such a component is already added to the game object!
+ 
+(Filename:  Line: 97)
+
+name: table01(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: table_low03
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: speaker01_wood1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: TV01
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: TV01
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name: speaker01_wood1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.974620 ms
+UnloadTime: 1.397886 ms
 
 Unloading 159 unused Assets to reduce memory usage. Loaded Objects now: 384.
-Total: 1.306746 ms (FindLiveObjects: 0.052959 ms CreateObjectMapping: 0.063223 ms MarkObjects: 0.280808 ms  DeleteObjects: 0.909344 ms)
+Total: 1.287451 ms (FindLiveObjects: 0.074307 ms CreateObjectMapping: 0.061170 ms MarkObjects: 0.283272 ms  DeleteObjects: 0.867059 ms)
 

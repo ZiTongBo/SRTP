@@ -85,6 +85,7 @@ public class gameState : MonoBehaviour {
     }
     void OnGUI()
     {
+        GUI.Box(new Rect(0, sHeight - 30, 200, 30), "M键打开菜单，N键添加家具");
         switch (State)
         {
             case 0:
@@ -109,7 +110,7 @@ public class gameState : MonoBehaviour {
                 GUI.Window(0, new Rect(sWidth / 2 - 350, 200, 700, 700), menu, "");
                 break;
             case SAVE:
-                GUI.Label(new Rect(sWidth / 2 - 10, 10, 80, 30), "保存成功");
+                GUI.Label(new Rect(sWidth / 2 - 10, 10, 150, 30), "已保存到Screenshot目录下");
                 break;
             case ADD:
                 FPS.GetComponent<UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController>().enabled = false;
