@@ -44,6 +44,16 @@ public class Timer : MonoBehaviour {
         {
             if (_flag == false)
             {
+                if(_select.name == "door")
+                {
+                    SceneManager.LoadScene("SideScene");
+                    return;
+                }
+                if (_select.name == "doorSide")
+                {
+                    SceneManager.LoadScene("viewScene");
+                    return;
+                }
                 Debug.Log("lock");
                 _flag = true;
                 Selector.LockSelector();

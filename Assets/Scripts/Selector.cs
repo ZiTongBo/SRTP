@@ -19,7 +19,7 @@ public class Selector : MonoBehaviour {
 
     private static bool canSelect(GameObject o)
     {
-        if (o.name == "room" || o.name == "plane")
+        if (o.name == "room" || o.name == "plane" || o.name == "Plane")
             return false;
         if (Regex.IsMatch(o.name, "wall*"))
             return false;
