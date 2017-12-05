@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ViewScene.unity
+- path: Assets/SideScene.unity
   isLoaded: 1
   isActive: 1

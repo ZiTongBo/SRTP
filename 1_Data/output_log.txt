@@ -18,7 +18,7 @@ Platform assembly: E:\SRTP\1_Data\Managed\UnityEngine.UI.dll (this message is ha
 Loading E:\SRTP\1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: E:\SRTP\1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading E:\SRTP\1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.026 seconds
+- Completed reload, in  0.027 seconds
 Platform assembly: E:\SRTP\1_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: E:\SRTP\1_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on Mojing
@@ -31,83 +31,35 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.941604 ms
+UnloadTime: 2.041210 ms
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 2630 -> priority: 1 
-  Thread -> id: 24f4 -> priority: 1 
-  Thread -> id: 2420 -> priority: 1 
-  Thread -> id: 1ca8 -> priority: 1 
+  Thread -> id: 27c4 -> priority: 1 
+  Thread -> id: 27ac -> priority: 1 
+  Thread -> id: 23c0 -> priority: 1 
+  Thread -> id: 1fd0 -> priority: 1 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.457753 ms
+UnloadTime: 0.334590 ms
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 693.
-Total: 0.438868 ms (FindLiveObjects: 0.078823 ms CreateObjectMapping: 0.036127 ms MarkObjects: 0.258640 ms  DeleteObjects: 0.064044 ms)
+Total: 0.305032 ms (FindLiveObjects: 0.029969 ms CreateObjectMapping: 0.033253 ms MarkObjects: 0.181459 ms  DeleteObjects: 0.059938 ms)
 
 name: table02
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-name: speaker01_wood1
+blink
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-name: table_low03
+name: table01
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-name: speaker01_wood1
+name: table01
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-name: table02
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: chair02
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: door
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: table_low03
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: TV01
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: speaker01_wood1
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: table02
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: chair02
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: door
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: table_low03
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: chair
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: door
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: door
+name: chair01
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -136,44 +88,12 @@ blink
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.917559 ms
+UnloadTime: 1.805970 ms
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 737.
-Total: 0.584610 ms (FindLiveObjects: 0.085803 ms CreateObjectMapping: 0.066918 ms MarkObjects: 0.371129 ms  DeleteObjects: 0.059938 ms)
+Total: 1.025531 ms (FindLiveObjects: 0.247556 ms CreateObjectMapping: 0.110435 ms MarkObjects: 0.568599 ms  DeleteObjects: 0.096066 ms)
 
-name: chair02
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_2seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_3seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-blink
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_2seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_3seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_3seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_3seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_2seats
+name: doorSide
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -197,91 +117,13 @@ blink
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-lock
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.518102 ms
 
-rotate
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 692.
+Total: 0.958202 ms (FindLiveObjects: 0.082108 ms CreateObjectMapping: 0.073897 ms MarkObjects: 0.620327 ms  DeleteObjects: 0.181459 ms)
 
-done
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_2seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_2seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: table_low03
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: TV01
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: TV01
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: speaker01_wood1
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: table02
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_3seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_2seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_2seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_3seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_3seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-blink
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: table_low01
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_2seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_3seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: chair
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_3seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_2seats
+name: door
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -289,21 +131,13 @@ name: door
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-name: sofa1_3seats
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: table_low01
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-name: sofa1_2seats
+name: TV01
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.807123 ms
+UnloadTime: 0.689298 ms
 
-Unloading 172 unused Assets to reduce memory usage. Loaded Objects now: 385.
-Total: 1.414724 ms (FindLiveObjects: 0.065686 ms CreateObjectMapping: 0.061581 ms MarkObjects: 0.312832 ms  DeleteObjects: 0.973803 ms)
+Unloading 163 unused Assets to reduce memory usage. Loaded Objects now: 384.
+Total: 1.053037 ms (FindLiveObjects: 0.050496 ms CreateObjectMapping: 0.044338 ms MarkObjects: 0.227439 ms  DeleteObjects: 0.729531 ms)
 
